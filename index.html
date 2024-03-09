@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            line-height: 30px;
+            background-color: rgb(153, 162, 29);
+            border: none;
+            padding: 20px;
+            font-size: 20px;
+        }
+        body{
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Polsanin paytaxti haradir?</h1>
+    <button id="btn1">Baki</button>
+    <button id="btn2">Imisli</button>
+    <button id="btn3">Warshava</button>
+    <button id="btn4">IDK</button><br><br>
+    <h1>Azerbaydzanin paytaxti haradir?</h1>
+    <button id="btn5">Baki</button>
+    <button id="btn6">Imisli</button>
+    <button id="btn7">Warshava</button>
+    <button id="btn8">IDK</button><br><br>
+    <h1>Mashel nedi?</h1>
+    <button id="btn9">anime</button>
+    <button id="btn10">film</button>
+    <button id="btn11">мускулы</button>
+    <button id="btn12">IDK</button><br><br>
+    <h1>Narutonin glavniy geroyi kimdi?</h1>
+    <button id="btn13">sasuke</button>
+    <button id="btn14">sakura</button>
+    <button id="btn15">naruto</button>
+    <button id="btn16">IDK</button><br><br>
+    <h1>Idk ne demelidi?</h1>
+    <button id="btn17">I dont know</button>
+    <button id="btn18">I dont care</button>
+    <button id="btn19">lalsasl</button>
+    <button id="btn20">IDK</button><br><br>
+    <h1>ukrainanin paytaxti haradir?</h1>
+    <button id="btn21">Baki</button>
+    <button id="btn22">Kiyev</button>
+    <button id="btn23">Warshava</button>
+    <button id="btn24">Berlin</button><br><br>
+    <h1>Britanianin paytaxti haradir?</h1>
+    <button id="btn25">Baki</button>
+    <button id="btn26">Korea</button>
+    <button id="btn27">Japan</button>
+    <button id="btn28">London</button><br><br>
+    <h1>Manitor ne edir?</h1>
+    <button id="btn29">ekrani gosterir</button>
+    <button id="btn30">film gestarir</button>
+    <button id="btn31">cd disk</button>
+    <button id="btn32">IDK</button><br><br>
+    <h1>naushnik nedi?</h1>
+    <button id="btn33">kolonka</button>
+    <button id="btn34">Balaca kolonka gulax ucun</button>
+    <button id="btn35">мускулы</button>
+    <button id="btn36">IDK</button><br><br>
+    <h1>Ayaz Kimdi?</h1>
+    <button id="btn37">Krasava</button>
+    <button id="btn38">Krasava</button>
+    <button id="btn39">Krasava</button>
+    <button id="btn40">Pis adam</button><br><br>
+
+
+    <script>
+        const duyme1 = document.querySelector('#btn1');
+        const duyme2 = document.querySelector('#btn2');
+        const duyme3 = document.querySelector('#btn3');
+        const duyme4 = document.querySelector('#btn4');
+        const duyme5 = document.querySelector('#btn5');
+        const duyme6 = document.querySelector('#btn6');
+        const duyme7 = document.querySelector('#btn7');
+        const duyme8 = document.querySelector('#btn8');
+        const duyme9 = document.querySelector('#btn9');
+        const duyme10 = document.querySelector('#btn10');
+        const duyme11 = document.querySelector('#btn11');
+        const duyme12 = document.querySelector('#btn12');
+        const duyme13 = document.querySelector('#btn13');
+        const duyme14 = document.querySelector('#btn14');
+        const duyme15 = document.querySelector('#btn15');
+        const duyme16 = document.querySelector('#btn16');
+        const duyme17 = document.querySelector('#btn17');
+        const duyme18 = document.querySelector('#btn18');
+        const duyme19 = document.querySelector('#btn19');
+        const duyme20 = document.querySelector('#btn20');
+        const duyme21 = document.querySelector('#btn21');
+        const duyme22 = document.querySelector('#btn22');
+        const duyme23 = document.querySelector('#btn23');
+        const duyme24 = document.querySelector('#btn24');
+        const duyme25 = document.querySelector('#btn25');
+        const duyme26 = document.querySelector('#btn26');
+        const duyme27 = document.querySelector('#btn27');
+        const duyme28 = document.querySelector('#btn28');
+        const duyme29 = document.querySelector('#btn29');
+        const duyme30 = document.querySelector('#btn30');
+        const duyme31 = document.querySelector('#btn31');
+        const duyme32 = document.querySelector('#btn32');
+        const duyme33 = document.querySelector('#btn33');
+        const duyme34 = document.querySelector('#btn34');
+        const duyme35 = document.querySelector('#btn35');
+        const duyme36 = document.querySelector('#btn36');
+        const duyme37 = document.querySelector('#btn37');
+        const duyme38 = document.querySelector('#btn38');
+        const duyme39 = document.querySelector('#btn39');
+        const duyme40 = document.querySelector('#btn40');
+
+        let num = Math.floor(Math.random() * 4);
+
+        duyme1.addEventListener('click', (e) => {
+            console.log(e.target);
+            e.target.style.color = 'white'
+            e.target.style.backgroundColor = 'red';
+        })
+
+        duyme2.addEventListener('click', (e) => {
+            console.log(e.target);
+            e.target.style.color = 'white'
+            e.target.style.backgroundColor = 'red';
+        })
+
+        duyme3.addEventListener('click', (e) => {
+            console.log(e.target);
+            e.target.style.color = 'white'
+            e.target.style.backgroundColor = 'green';
+        })
+
+        duyme4.addEventListener('click', (e) => {
+            console.log(e.target);
+            e.target.style.color = 'white'
+            e.target.style.backgroundColor = 'red';
+        })
+        duyme5.addEventListener('click', (e) => {
+            console.log(e.target);
+            e.target.style.color = 'white'
+            e.target.style.backgroundColor = 'green';
+        })
+
+        duyme6.addEventListener('click', (e) => {
+            console.log(e.target);
+            e.target.style.color = 'white'
+            e.target.style.backgroundColor = 'red';
+        })
+
+        duyme7.addEventListener('click', (e) => {
+            console.log(e.target);
+            e.target.style.color = 'white'
+            e.target.style.backgroundColor = 'red';
+        })
+
+        duyme8.addEventListener('click', (e) => {
+            console.log(e.target);
+            e.target.style.color = 'white'
+            e.target.style.backgroundColor = 'red';
+        })
+        duyme9.addEventListener('click', (e) => {
+            console.log(e.target);
+            e.target.style.color = 'white'
+            e.target.style.backgroundColor = 'green';
+        })
+
+        duyme10.addEventListener('click', (e) => {
+            console.log(e.target);
+            e.target.style.color = 'white'
+            e.target.style.backgroundColor = 'red';
+        })
+        duyme11.addEventListener('click', (e) => {
+            console.log(e.target);
+            e.target.style.color = 'white'
+            e.target.style.backgroundColor = 'red';
+        })
+
+        duyme12.addEventListener('click', (e) => {
+            console.log(e.target);
+            e.target.style.color = 'white'
+            e.target.style.backgroundColor = 'red';
+        })
+//////////////////////////////////////////////////////////
+        duyme13.addEventListener('click', (e) => {
+            console.log(e.target);
+            e.target.style.color = 'white'
+            e.target.style.backgroundColor = 'red';
+        })
+
+        duyme14.addEventListener('click', (e) => {
+            console.log(e.target);
+            e.target.style.color = 'white'
+            e.target.style.backgroundColor = 'red';
+        })
+        duyme15.addEventListener('click', (e) => {
+            console.log(e.target);
+            e.target.style.color = 'white'
+            e.target.style.backgroundColor = 'green';
+        })
+
+        duyme16.addEventListener('click', (e) => {
+            console.log(e.target);
+            e.target.style.color = 'white'
+            e.target.style.backgroundColor = 'red';
+        })
+
+        duyme17.addEventListener('click', (e) => {
+            console.log(e.target);
+            e.target.style.color = 'white'
+            e.target.style.backgroundColor = 'green';
+        })
+
+        duyme18.addEventListener('click', (e) => {
+            console.log(e.target);
+            e.target.style.color = 'white'
+            e.target.style.backgroundColor = 'red';
+        })
+        duyme19.addEventListener('click', (e) => {
+            console.log(e.target);
+            e.target.style.color = 'white'
+            e.target.style.backgroundColor = 'red';
+        })
+
+        duyme20.addEventListener('click', (e) => {
+            console.log(e.target);
+            e.target.style.color = 'white'
+            e.target.style.backgroundColor = 'red';
+        })
+        duyme21.addEventListener('click', (e) => {
+            console.log(e.target);
+            e.target.style.color = 'white'
+            e.target.style.backgroundColor = 'red';
+        })
+
+        duyme22.addEventListener('click', (e) => {
+            console.log(e.target);
+            e.target.style.color = 'white'
+            e.target.style.backgroundColor = 'green';
+        })
+
+        duyme23.addEventListener('click', (e) => {
+            console.log(e.target);
+            e.target.style.color = 'white'
+            e.target.style.backgroundColor = 'red';
+        })
+
+        duyme24.addEventListener('click', (e) => {
+            console.log(e.target);
+            e.target.style.color = 'white'
+            e.target.style.backgroundColor = 'red';
+        })
+        duyme25.addEventListener('click', (e) => {
+            console.log(e.target);
+            e.target.style.color = 'white'
+            e.target.style.backgroundColor = 'red';
+        })
+
+        duyme26.addEventListener('click', (e) => {
+            console.log(e.target);
+            e.target.style.color = 'white'
+            e.target.style.backgroundColor = 'red';
+        })
+
+        duyme27.addEventListener('click', (e) => {
+            console.log(e.target);
+            e.target.style.color = 'white'
+            e.target.style.backgroundColor = 'red';
+        })
+
+        duyme28.addEventListener('click', (e) => {
+            console.log(e.target);
+            e.target.style.color = 'white'
+            e.target.style.backgroundColor = 'green';
+        })
+        duyme29.addEventListener('click', (e) => {
+            console.log(e.target);
+            e.target.style.color = 'white'
+            e.target.style.backgroundColor = 'green';
+        })
+
+        duyme30.addEventListener('click', (e) => {
+            console.log(e.target);
+            e.target.style.color = 'white'
+            e.target.style.backgroundColor = 'red';
+        })
+        duyme31.addEventListener('click', (e) => {
+            console.log(e.target);
+            e.target.style.color = 'white'
+            e.target.style.backgroundColor = 'red';
+        })
+
+        duyme32.addEventListener('click', (e) => {
+            console.log(e.target);
+            e.target.style.color = 'white'
+            e.target.style.backgroundColor = 'red';
+        })
+
+        duyme33.addEventListener('click', (e) => {
+            console.log(e.target);
+            e.target.style.color = 'white'
+            e.target.style.backgroundColor = 'red';
+        })
+
+        duyme34.addEventListener('click', (e) => {
+            console.log(e.target);
+            e.target.style.color = 'white'
+            e.target.style.backgroundColor = 'green';
+        })
+        duyme35.addEventListener('click', (e) => {
+            console.log(e.target);
+            e.target.style.color = 'white'
+            e.target.style.backgroundColor = 'red';
+        })
+
+        duyme36.addEventListener('click', (e) => {
+            console.log(e.target);
+            e.target.style.color = 'white'
+            e.target.style.backgroundColor = 'red';
+        })
+
+        duyme37.addEventListener('click', (e) => {
+            console.log(e.target);
+            e.target.style.color = 'white'
+            e.target.style.backgroundColor = 'green';
+        })
+
+        duyme38.addEventListener('click', (e) => {
+            console.log(e.target);
+            e.target.style.color = 'white'
+            e.target.style.backgroundColor = 'green';
+        })
+        duyme39.addEventListener('click', (e) => {
+            console.log(e.target);
+            e.target.style.color = 'white'
+            e.target.style.backgroundColor = 'green';
+        })
+
+        duyme40.addEventListener('click', (e) => {
+            console.log(e.target);
+            e.target.style.color = 'white'
+            e.target.style.backgroundColor = 'red';
+        })
+
+    </script>
+
+</body>
+
+</html>
