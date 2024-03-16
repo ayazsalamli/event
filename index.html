@@ -73,360 +73,43 @@
     <button id="btn38">Krasava</button>
     <button id="btn39">Krasava</button>
     <button id="btn40">Pis adam</button><br><br>
-    
+    <h1 id="bali"></h1>
+
 
 
     <script>
-        let bals = 10;
-        const duyme1 = document.querySelector('#btn1');
-        const duyme2 = document.querySelector('#btn2');
-        const duyme3 = document.querySelector('#btn3');
-        const duyme4 = document.querySelector('#btn4');
-        const duyme5 = document.querySelector('#btn5');
-        const duyme6 = document.querySelector('#btn6');
-        const duyme7 = document.querySelector('#btn7');
-        const duyme8 = document.querySelector('#btn8');
-        const duyme9 = document.querySelector('#btn9');
-        const duyme10 = document.querySelector('#btn10');
-        const duyme11 = document.querySelector('#btn11');
-        const duyme12 = document.querySelector('#btn12');
-        const duyme13 = document.querySelector('#btn13');
-        const duyme14 = document.querySelector('#btn14');
-        const duyme15 = document.querySelector('#btn15');
-        const duyme16 = document.querySelector('#btn16');
-        const duyme17 = document.querySelector('#btn17');
-        const duyme18 = document.querySelector('#btn18');
-        const duyme19 = document.querySelector('#btn19');
-        const duyme20 = document.querySelector('#btn20');
-        const duyme21 = document.querySelector('#btn21');
-        const duyme22 = document.querySelector('#btn22');
-        const duyme23 = document.querySelector('#btn23');
-        const duyme24 = document.querySelector('#btn24');
-        const duyme25 = document.querySelector('#btn25');
-        const duyme26 = document.querySelector('#btn26');
-        const duyme27 = document.querySelector('#btn27');
-        const duyme28 = document.querySelector('#btn28');
-        const duyme29 = document.querySelector('#btn29');
-        const duyme30 = document.querySelector('#btn30');
-        const duyme31 = document.querySelector('#btn31');
-        const duyme32 = document.querySelector('#btn32');
-        const duyme33 = document.querySelector('#btn33');
-        const duyme34 = document.querySelector('#btn34');
-        const duyme35 = document.querySelector('#btn35');
-        const duyme36 = document.querySelector('#btn36');
-        const duyme37 = document.querySelector('#btn37');
-        const duyme38 = document.querySelector('#btn38');
-        const duyme39 = document.querySelector('#btn39');
-        const duyme40 = document.querySelector('#btn40');
+        let totalScore = 0; 
 
+        function handleButtonClick(correctAnswerId, event) {
+            const clickedButtonId = event.target.id;
+            const clickedButton = document.getElementById(clickedButtonId);
+
+            if (clickedButtonId === correctAnswerId) {
+                clickedButton.style.backgroundColor = 'green'; 
+                totalScore++; 
+            } else {
+                clickedButton.style.backgroundColor = 'red'; 
+            }
+
+           
+
+            document.getElementById('bali').textContent = `Sizin baliniz: ${totalScore}`;
+        }
+      
+
+        document.getElementById('btn3').addEventListener('click', handleButtonClick.bind(null, 'btn3'));
+        document.getElementById('btn5').addEventListener('click', handleButtonClick.bind(null, 'btn5'));
+        document.getElementById('btn9').addEventListener('click', handleButtonClick.bind(null, 'btn9'));
+        document.getElementById('btn15').addEventListener('click', handleButtonClick.bind(null, 'btn15'));
+        document.getElementById('btn17').addEventListener('click', handleButtonClick.bind(null, 'btn17'));
+        document.getElementById('btn21').addEventListener('click', handleButtonClick.bind(null, 'btn21'));
+        document.getElementById('btn25').addEventListener('click', handleButtonClick.bind(null, 'btn25'));
+        document.getElementById('btn29').addEventListener('click', handleButtonClick.bind(null, 'btn29'));
+        document.getElementById('btn34').addEventListener('click', handleButtonClick.bind(null, 'btn34'));
+        document.getElementById('btn39').addEventListener('click', handleButtonClick.bind(null, 'btn39'));
         let num = Math.floor(Math.random() * 4);
 
-        duyme1.addEventListener('click', (e) => {
-            console.log(e.target);
-            e.target.style.color = 'white'
-            e.target.style.backgroundColor = 'red';
-            bals -= 10
-        })
-
-        duyme2.addEventListener('click', (e) => {
-            console.log(e.target);
-            e.target.style.color = 'white'
-            e.target.style.backgroundColor = 'red';
-            bals -= 10
-
-        })
-
-        duyme3.addEventListener('click', (e) => {
-            console.log(e.target);
-            e.target.style.color = 'white'
-            e.target.style.backgroundColor = 'green';
-            bals += 10
-
-        })
-
-        duyme4.addEventListener('click', (e) => {
-            console.log(e.target);
-            e.target.style.color = 'white'
-            e.target.style.backgroundColor = 'red';
-            bals -= 10
-
-        })
-        duyme5.addEventListener('click', (e) => {
-            console.log(e.target);
-            e.target.style.color = 'white'
-            e.target.style.backgroundColor = 'green';
-            bals += 10
-
-        })
-
-        duyme6.addEventListener('click', (e) => {
-            console.log(e.target);
-            e.target.style.color = 'white'
-            e.target.style.backgroundColor = 'red';
-            bals -= 10
-
-        })
-
-        duyme7.addEventListener('click', (e) => {
-            console.log(e.target);
-            e.target.style.color = 'white'
-            e.target.style.backgroundColor = 'red';
-            bals -= 10
-
-        })
-
-        duyme8.addEventListener('click', (e) => {
-            console.log(e.target);
-            e.target.style.color = 'white'
-            e.target.style.backgroundColor = 'red';
-            bals -= 10
-
-        })
-        duyme9.addEventListener('click', (e) => {
-            console.log(e.target);
-            e.target.style.color = 'white'
-            e.target.style.backgroundColor = 'green';
-            bals += 10
-
-        })
-
-        duyme10.addEventListener('click', (e) => {
-            console.log(e.target);
-            e.target.style.color = 'white'
-            e.target.style.backgroundColor = 'red';
-            bals -= 10
-
-        })
-        duyme11.addEventListener('click', (e) => {
-            console.log(e.target);
-            e.target.style.color = 'white'
-            e.target.style.backgroundColor = 'red';
-            bals -= 10
-
-        })
-
-        duyme12.addEventListener('click', (e) => {
-            console.log(e.target);
-            e.target.style.color = 'white'
-            e.target.style.backgroundColor = 'red';
-            bals -= 10
-
-        })
-        //////////////////////////////////////////////////////////
-        duyme13.addEventListener('click', (e) => {
-            console.log(e.target);
-            e.target.style.color = 'white'
-            e.target.style.backgroundColor = 'red';
-            bals -= 10
-
-        })
-
-        duyme14.addEventListener('click', (e) => {
-            console.log(e.target);
-            e.target.style.color = 'white'
-            e.target.style.backgroundColor = 'red';
-            bals -= 10
-
-        })
-        duyme15.addEventListener('click', (e) => {
-            console.log(e.target);
-            e.target.style.color = 'white'
-            e.target.style.backgroundColor = 'green';
-            bals += 10
-
-        })
-
-        duyme16.addEventListener('click', (e) => {
-            console.log(e.target);
-            e.target.style.color = 'white'
-            e.target.style.backgroundColor = 'red';
-            bals -= 10
-
-        })
-
-        duyme17.addEventListener('click', (e) => {
-            console.log(e.target);
-            e.target.style.color = 'white'
-            e.target.style.backgroundColor = 'green';
-            bals += 10
-
-        })
-
-        duyme18.addEventListener('click', (e) => {
-            console.log(e.target);
-            e.target.style.color = 'white'
-            e.target.style.backgroundColor = 'red';
-            bals -= 10
-
-        })
-        duyme19.addEventListener('click', (e) => {
-            console.log(e.target);
-            e.target.style.color = 'white'
-            e.target.style.backgroundColor = 'red';
-            bals -= 10
-
-        })
-
-        duyme20.addEventListener('click', (e) => {
-            console.log(e.target);
-            e.target.style.color = 'white'
-            e.target.style.backgroundColor = 'red';
-            bals -= 10
-
-        })
-        duyme21.addEventListener('click', (e) => {
-            console.log(e.target);
-            e.target.style.color = 'white'
-            e.target.style.backgroundColor = 'green';
-            bals += 10
-
-        })
-
-        duyme22.addEventListener('click', (e) => {
-            console.log(e.target);
-            e.target.style.color = 'white'
-            e.target.style.backgroundColor = 'red';
-            bals -= 10
-
-        })
-
-        duyme23.addEventListener('click', (e) => {
-            console.log(e.target);
-            e.target.style.color = 'white'
-            e.target.style.backgroundColor = 'red';
-            bals -= 10
-
-        })
-
-        duyme24.addEventListener('click', (e) => {
-            console.log(e.target);
-            e.target.style.color = 'white'
-            e.target.style.backgroundColor = 'red';
-            bals -= 10
-
-        })
-        duyme25.addEventListener('click', (e) => {
-            console.log(e.target);
-            e.target.style.color = 'white'
-            e.target.style.backgroundColor = 'green';
-            bals += 10
-
-        })
-
-        duyme26.addEventListener('click', (e) => {
-            console.log(e.target);
-            e.target.style.color = 'white'
-            e.target.style.backgroundColor = 'red';
-            bals -= 10
-
-        })
-
-        duyme27.addEventListener('click', (e) => {
-            console.log(e.target);
-            e.target.style.color = 'white'
-            e.target.style.backgroundColor = 'red';
-            bals -= 10
-
-        })
-
-        duyme28.addEventListener('click', (e) => {
-            console.log(e.target);
-            e.target.style.color = 'white'
-            e.target.style.backgroundColor = 'red';
-            bals -= 10
-
-        })
-        duyme29.addEventListener('click', (e) => {
-            console.log(e.target);
-            e.target.style.color = 'white'
-            e.target.style.backgroundColor = 'green';
-            bals += 10
-
-        })
-
-        duyme30.addEventListener('click', (e) => {
-            console.log(e.target);
-            e.target.style.color = 'white'
-            e.target.style.backgroundColor = 'red';
-            bals -= 10
-
-        })
-        duyme31.addEventListener('click', (e) => {
-            console.log(e.target);
-            e.target.style.color = 'white'
-            e.target.style.backgroundColor = 'red';
-            bals -= 10
-
-        })
-
-        duyme32.addEventListener('click', (e) => {
-            console.log(e.target);
-            e.target.style.color = 'white'
-            e.target.style.backgroundColor = 'red';
-            bals -= 10
-
-        })
-
-        duyme33.addEventListener('click', (e) => {
-            console.log(e.target);
-            e.target.style.color = 'white'
-            e.target.style.backgroundColor = 'red';
-            bals -= 10
-
-        })
-
-        duyme34.addEventListener('click', (e) => {
-            console.log(e.target);
-            e.target.style.color = 'white'
-            e.target.style.backgroundColor = 'green';
-            bals += 10
-
-        })
-        duyme35.addEventListener('click', (e) => {
-            console.log(e.target);
-            e.target.style.color = 'white'
-            e.target.style.backgroundColor = 'red';
-            bals -= 10
-
-        })
-
-        duyme36.addEventListener('click', (e) => {
-            console.log(e.target);
-            e.target.style.color = 'white'
-            e.target.style.backgroundColor = 'red';               bals -= 10
-
-        })
-
-        duyme37.addEventListener('click', (e) => {
-            console.log(e.target);
-            e.target.style.color = 'white'
-            e.target.style.backgroundColor = 'green';
-            bals += 10
-
-        })
-
-        duyme38.addEventListener('click', (e) => {
-            console.log(e.target);
-            e.target.style.color = 'white'
-            e.target.style.backgroundColor = 'green';
-            bals += 10
-
-        })
-        duyme39.addEventListener('click', (e) => {
-            console.log(e.target);
-            e.target.style.color = 'white'
-            e.target.style.backgroundColor = 'green';
-            bals += 10
-
-        })
-
-        duyme40.addEventListener('click', (e) => {
-            console.log(e.target);
-            e.target.style.color = 'white'
-            e.target.style.backgroundColor = 'red';
-            bals -= 10
-
-        })
+        
 
     </script>
 
